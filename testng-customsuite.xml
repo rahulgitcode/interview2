@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Test1">
+	
+  <test verbose="2" name="Default test">
+  <parameter name="a" value="a" />
+	<parameter name="b" value="b" />
+	<parameter name="flag" value="true"/>
+    <classes>
+      <class name="org.interview.unittesting.StringConcatenateTest"/>
+    </classes>
+  </test> <!-- Default test -->
+  
+  
+  <test verbose="2" name="Test2">
+  <parameter name="a" value="a" />
+	<parameter name="b" value="b" />
+	<parameter name="flag" value="false"/>
+    <classes>
+      <class name="org.interview.unittesting.StringConcatenateTest"/>
+    </classes>
+  </test> <!-- Default test -->
+</suite> <!-- Default suite -->
